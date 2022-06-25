@@ -2,6 +2,12 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color:lightblue;
+}
+
 .header {
     gap: 20 0px;
 }
@@ -18,7 +24,12 @@ html {
     display:flex;
     align-items:center;
     justify-content:flex-start;
-    max-width: 1000px;
+    min-height: 350px;
+    min-width: 350px;
+    height: 90vw;
+    width: 90vw;
+    max-height: 700px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -32,9 +43,15 @@ button {
     background-color:cornflowerblue;
     border: 3px solid black;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     font-size: x-large;
     margin: 20px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: yellow;
+    cursor: pointer;
 }
 
 .outer-container {
@@ -45,20 +62,33 @@ button {
 }
 
 .grid {
+    height: 90%;
+    width: 90%;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
     border: 5px solid black;
-    height: 600px;
-    width: 600px;
+    height: 650px;
+    width: 650px;
 }
 
-.square {
-    background-color:wheat;
-    border: 1px solid black;
+.grid:hover{
+    cursor: pointer;
 }
 
-.color {
-    background-color:black;
-    border:1px solid black;
+input {
+    width: 150px;
+}
+
+.error {
+    display: none;
+}
+
+#number-input {
+    margin-left: 30px;
+}
+
+label {
+    padding:10px;
+    margin-left:20px;
+    text-align: center;
+    width:150px;
 }
