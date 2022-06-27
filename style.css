@@ -8,6 +8,29 @@ body {
     background-color:lightblue;
 }
 
+button {
+    background-color:cornflowerblue;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: x-large;
+    margin: 20px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+input {
+    width: 150px;
+}
+
+#input-number {
+    margin-left: 30px;
+}
+
 .header {
     gap: 20 0px;
 }
@@ -39,21 +62,6 @@ body {
     margin: 30px;
 }
 
-button {
-    background-color:cornflowerblue;
-    border: 3px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: x-large;
-    margin: 20px;
-    transition: all 0.3s;
-}
-
-button:hover {
-    background-color: yellow;
-    cursor: pointer;
-}
-
 .outer-container {
     margin: 0 0 0 60px;
     display: flex;
@@ -74,21 +82,15 @@ button:hover {
     cursor: pointer;
 }
 
-input {
-    width: 150px;
-}
-
 .error {
     display: none;
 }
 
-#number-input {
-    margin-left: 30px;
-}
-
-label {
+.label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding:10px;
-    margin-left:20px;
+    margin-left:15px;
     text-align: center;
     width:150px;
+    height:100px;
 }

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
@@ -21,8 +22,8 @@
             <button class="rainbowButton" onclick="changeColor('rainbow')">Rainbow</button>
             <button>Color <input id="input-color" type="color" value = "#ff0000"></button>
             <button>Set Size</button>
-            <input id="number-input" type="text" placeholder="Grid Size" value="16" onchange="newGrid(this.value)" />
-            <label for="size">Type a value for the new grid size.</label>
+            <input id="input-number" type="text" placeholder="Grid Size" value="16" onchange="newGrid(this.value)" />
+            <label class="label" for="size">Type a value for the new grid size.</label>
             <div class="error">Please put an input between 2 and 100!</div>
         </div>
 
@@ -30,7 +31,6 @@
             <div class="grid"></div>
         </div>
     </main>
-    
 </body>
 
 <script src="scripts.js"></script>
